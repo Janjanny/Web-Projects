@@ -1,0 +1,100 @@
+$scoreFont: 'Cursed Timer ULiL';
+$scoreColor: #F94F6D;
+$textFont: 'Verdana';
+$textColor: #F9FAFB;
+$backgroundColor: #0C4A6E;
+$scoreBackground: #111827;
+$buttonColor: #BAE6FD;
+
+
+body {
+    background-color: $backgroundColor;
+}
+.container {
+    width: 70%;
+    min-height: 50vh;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    .title {
+        width: 100%;
+        font-family: $textFont;
+        font-size: 40px;
+        color: $textColor;
+        font-style: italic;
+        padding-bottom: 5px;
+        h1 {
+            margin-bottom: 10px;
+        }
+
+    }
+
+    .scores {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+
+        .home-score, .guest-score {
+            width: 50%;
+            
+            h2 {
+                font-family: $textFont;
+                font-size: 50px;
+                color: $textColor;
+                margin-bottom: 0;
+            }
+
+            .score {
+                width: 180px;
+                height: 160px;
+                background-color: $scoreBackground;
+                margin-left: auto;
+                margin-right: auto;
+                margin-top: -70px;
+                margin-bottom: 30px;
+
+                h1 {
+                    line-height: 180px;
+                    vertical-align: middle;
+                    font-family: $scoreFont;
+                    font-size: 120px;
+                    color: $scoreColor;
+                }
+
+                
+            }
+
+            button {
+                font-family: $scoreFont;
+                color: $buttonColor;
+                font-size: 25px;
+                border: 2px solid $buttonColor;
+                border-radius: 5px;
+                background-color: transparent;
+                cursor: pointer;
+                padding: 8px 15px;
+                margin: 5px;
+                text-align: center;
+                transition: 0.2s ease;
+            }
+
+            button:hover {
+                background-color: $buttonColor;
+                color: $backgroundColor;
+            }
+            button:active {
+                transform: scale(.85);
+            }
+        }
+
+
+    }
+}
+
+
+

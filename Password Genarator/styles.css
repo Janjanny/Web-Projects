@@ -1,0 +1,86 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #232931;
+  color: #EEEEEE;
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  max-width: 80%;
+  height: 70vh;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.container h1 {
+  font-size: 4em;
+  line-height: 1em;
+}
+.container h1 span {
+  color: #4ECCA3;
+}
+.container h2 {
+  font-weight: lighter;
+}
+.container .buttons {
+  margin-top: 3em;
+}
+.container .buttons button {
+  font-size: 1.5em;
+  font-weight: bold;
+  padding: 0.5em 0.5em;
+  background-color: #4ECCA3;
+  color: #EEEEEE;
+  border: none;
+  border-radius: 0.3em;
+  cursor: pointer;
+  margin-bottom: 1.1em;
+}
+.container .buttons button:hover {
+  color: #4ECCA3;
+  background-color: #EEEEEE;
+  transition: 0.3s ease;
+}
+.container .buttons button:active {
+  transform: scale(0.95);
+  transition: 0.1s;
+}
+.container .buttons p {
+  font-size: 1.5em;
+  font-weight: lighter;
+}
+.container .buttons hr {
+  width: 25em;
+  height: 1px;
+  background-color: #EEEEEE;
+}
+.container .samples {
+  margin-top: 2em;
+}
+.container .samples button {
+  font-size: 1.3em;
+  padding: 0.5em 1em;
+  background-color: #393E46;
+  border: none;
+  color: #4ECCA3;
+  border-radius: 0.3em;
+  cursor: pointer;
+}
+.container .samples button:hover {
+  color: #393E46;
+  background-color: #4ECCA3;
+  transition: 0.3s;
+}
+.container .samples button:active {
+  transform: scale(0.9);
+}
+.container .samples #firstPass {
+  margin-right: 1em;
+}/*# sourceMappingURL=styles.css.map */

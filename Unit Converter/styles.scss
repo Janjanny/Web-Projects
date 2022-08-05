@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;500;700&family=Poppins:wght@500&display=swap');
+
+$blue: #6943FF;
+$background: #1F2937;
+$text-1: #CCC1FF;
+$div-color: #273549;
+$text: white;
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Inter';
+}
+
+body{
+    background-color: $background;
+    color: $text;
+}
+
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 550px;
+    height: 729px;
+    border: 1px solid #5c5c5c;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .number-div {
+        width: 100%;
+        height: 285px;
+        background-color: $blue;
+        padding: 28px;
+        text-align: center;
+        margin-bottom: 36px;
+    
+        h2 {
+            font-size: 28px;
+            margin-bottom: 25px;
+        }
+        #input-field {
+            border: 2px solid #B295FF;
+            border-radius: 5px;
+            width: 117px;
+            height: 83px;
+            margin-left: auto;
+            margin-right: auto;
+            background-color: transparent;
+            font-size: 60px;
+            text-align: center;
+            color: $text;
+            font-weight: bold;
+            margin-bottom: 28px;
+        }
+
+        #input-field:focus{
+            outline: none;
+        }
+    
+        button {
+            display: block;
+            width: 117px;
+            height: 42px;
+            background-color: $text;
+            border: none;
+            box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+            border-radius: 5px;  
+            cursor: pointer;
+            margin-left: auto;     
+            margin-right: auto;
+            transition: 0.2s;
+            
+        }
+    
+        button:hover{
+            border: 2px solid $text;
+            background-color: transparent;
+            color: $text;
+    
+        }
+    
+        button:active{
+            transform: scale(.95);
+            background-color: $text;
+            color: $background;
+        }
+    
+        
+    }
+    
+    .measures {
+        width: 500px;
+        height: 108.57px;
+        background-color: $div-color;
+        border-radius: 4px;
+        text-align: center;
+        margin-bottom: 23px;
+        h3 {
+            color: $text-1;
+            font-size: 20px;
+            margin-top: 31px;
+            margin-bottom: 9px;
+        }
+        p{
+            font-size: 15px;
+            font-weight: 300;
+        }
+    }
+
+}
+

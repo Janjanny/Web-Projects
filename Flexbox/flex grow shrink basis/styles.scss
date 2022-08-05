@@ -1,0 +1,50 @@
+$background-color: #ffeead;
+$color1: #96ceb4;
+$color2: #ff6f69;
+$color3: #88d8b0;
+
+//flex basis is setting the base width of the element (max-width)
+//flex grow - is how much the extra space should be distributed to the element (1 times faster or 5 times faster to grow when the space is adjusted) - default is 0
+//flex shrink is the same with flex grow - defines how fast the element shrink - default is 1
+
+
+html, body {
+    background-color: $background-color;
+    margin: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+    height: 100%;
+}
+
+.container {
+    text-align: center;
+    font-size: 2em;
+    border: 5px solid #ffcc5c;
+    color: $background-color;
+    display: flex;
+
+    .home{
+        flex:1;
+    }
+    .search {
+        flex: 1;
+    }
+    
+    div {
+        padding: 10px;
+    }
+    div:nth-child(1) {
+        background-color: $color1;
+    }
+
+    div:nth-child(2) {
+        background-color: $color2;
+    }
+
+    div:nth-child(3) {
+        background-color: $color3;
+    }
+
+}
+
+

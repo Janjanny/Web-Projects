@@ -1,0 +1,546 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap');
+
+
+:root {
+    --bg-color: rgb(13, 13, 13);
+    --color2: #52057B;
+    --color3: #892CDC;
+    --color4: #BC6FF1;
+    --white: #ffffff;
+
+}
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    * {
+        scroll-behavior: smooth;
+    }
+}
+
+body{
+    margin: auto;
+}
+
+#navbar {
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    position: sticky;
+    justify-content: space-between;
+    top: 0;
+    width: 100%;  
+    min-height: 60px;
+    z-index: 5;
+    background-color: var(--color3);
+    overflow: hidden;
+}
+
+.logo {
+    margin-top: auto;
+    margin-bottom: auto; 
+    margin-left: 30px;
+    font-size: 25px;
+    color: var(--white);
+    user-select: none;
+    cursor: default;
+
+}
+
+
+
+.nav-links {
+    margin-top: auto;
+    margin-bottom: auto;
+    position: relative;
+    padding-right: 10px;
+    margin-right: 30px;
+}
+
+.nav-links a {
+    color: var(--white);
+    font-size: 20px;
+    font-weight: 300;
+    text-decoration: none;
+    margin: 10px;
+    padding: 100% 5px 100% 5px;
+    transition: .3s;
+}
+
+.nav-links a:hover {
+    background-color: var(--color2);
+}
+
+.welcome-page {
+    display: flex;
+    background-color: var(--bg-color);
+    width: 100%;
+    height: 92vh;
+    top: 0;
+    color: var(--white);
+}
+
+.welcome-page .introduction {
+    
+    width: 40%;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 40px;
+    margin-right: 100px;
+    padding-left: 30px;
+    z-index: 2;
+}
+
+.name {
+    font-size: 50px;
+    line-height: 50px;
+}
+
+.hi {
+    margin-bottom: 10px;
+}
+.hello {
+    font-weight: 300;
+    font-size: 20px;
+}
+
+.description {
+    margin-top: 18px;
+    text-align: justify;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.button {
+    margin-top: 30px;
+}
+
+.button .button1 {
+    font-size: 20px;
+    padding: 5px 12px;
+    border-radius: 8px;
+    margin-right: 20px;
+    background-color: var(--color2);
+    color: var(--white);
+    cursor: pointer;
+    transition: .3s;
+}
+
+.button .button1:hover {
+    background-color: var(--color4);
+    color: var(--bg-color);
+}
+
+.button .button2 {
+    font-size: 20px;
+    padding: 5px 12px;
+    border-radius: 8px;
+    background-color: transparent;
+    color: var(--color4);
+    border: 2px solid var(--color4);
+    cursor: pointer;
+    transition: .3s;
+
+}
+
+.button .button2:hover {
+    background-color: var(--color4);
+    color: var(--bg-color);
+}
+
+.welcome-page .picture {
+    display: flex;
+    width: 45%;
+    height: 100%;
+    overflow: hidden;
+    z-index: 2;
+}
+
+.picture img {
+    padding: 0;
+    display: flex;
+    width: 50%;
+    height: auto;
+    margin-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+.wave {
+    display: flex;
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    top: 208px;
+}
+
+.wave .svg-wave{
+    opacity: 100%;
+}
+
+
+
+.wave2 {
+    display: flex;
+    position: absolute;
+    z-index: 0;
+    width: 100%;
+    height: 100%;
+    top: 208px;
+}
+
+.shape1{
+    display: flex;
+    position: absolute;
+    z-index: 0;
+    width: 20%;
+    height: 100%;
+    top: -60px;
+    right: 5%;
+}
+
+.shape2 {
+    display: flex;
+    position: absolute;
+    z-index: 0;
+    width: 20%;
+    height: 100%;
+    top: -150px;
+    left: -3%;
+}
+
+
+
+.about {
+    display: flex;
+    background-color: var(--color4);
+    width: 100%;
+    height: 155vh;
+    padding-top: 100px;
+}
+
+.whiteshape {
+    display: flex;
+    position: absolute;
+    width: 40%;
+    height: 100%;
+    z-index: 1;
+    align-items: center;
+    left: 1%;
+    top: 650px;
+    
+}
+
+.about .pic-about {
+    display: flex;
+    width: 28%;
+    height: auto;
+    margin-right: auto;
+    margin-left: 40px;
+}
+
+.about .pic-about img {
+    width: 70%;
+    margin-bottom: auto;
+    margin-right: auto;
+    margin-left: 150px;
+    z-index: 2;
+}
+
+.about-me {
+    width: 60%;
+    margin-left: 80px;
+    margin-right: auto;
+    color: var(--white);
+    overflow: hidden;
+}
+
+.about-me h1 {
+    text-align: center;
+    font-size: 60px;
+}
+
+
+
+.skills {
+    display: grid;
+    position: absolute;
+    width: 35%;
+    height: 60%;
+    top: 165%;
+    left: 2%;
+    border-radius: 20px;
+    padding-left: 20px;
+    color: var(--white);
+    z-index: 1;
+
+}
+
+.bar .info span {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.bar .progress-line {
+    position: relative;
+    height: 15px;
+    width: 100%;
+    background-color: var(--white);
+    border-radius: 10px;
+    margin: 10px 0;
+}
+
+.bar .progress-line span {
+    height: 100%;
+    width: 80%;
+    background-color: var(--color3);
+    position: absolute;
+    border-radius: 10px;
+}
+
+.progress-line.html span {
+    width: 80%;
+}
+
+.progress-line.css span {
+    width: 70%;
+}
+
+.progress-line.javascript span {
+    width: 60%;
+}
+
+.progress-line.python span {
+    width: 75%;
+}
+
+.progress-line.mysql span {
+    width: 65%;
+}
+
+
+/*for the arrow above the progress line*/
+.bar .progress-line span::before {
+    position: absolute;
+    content: "";
+    right: 0;
+    top: -10px;
+    height: 0;
+    width: 0;
+    border: 7px solid transparent;
+    border-bottom-width: 0px;
+    border-right-width: 0px;
+    border-top-color: var(--white);
+}
+
+.bar .progress-line span::after {
+    position: absolute;
+    right: 0;
+    top: -28px;
+    color: var(--color2);
+    background-color: var(--white);
+    font-size: 12px;
+    font-weight: bold;
+    padding: 1px 8px;
+    border-radius: 3px;
+    
+}
+
+
+.bar .progress-line.html span::after {
+    content: "80%";
+}
+
+.bar .progress-line.css span::after {
+    content: "70%";
+}
+
+.bar .progress-line.javascript span::after {
+    content: "60%";
+}
+
+.bar .progress-line.python span::after {
+    content: "75%";
+}
+
+.bar .progress-line.mysql span::after {
+    content: "65%";
+}
+
+
+
+.skills .bar {
+    margin: 10px 0;
+}
+
+.skills h1 {
+    margin-left: auto;
+    margin-right: auto;
+    color: var(--white);
+    font-size: 40px;
+    left: 0;
+    right: 0;
+}
+
+.about-me-p {
+    column-count: 3;
+    column-gap: 40px;
+    margin-top: 20px;
+    text-align: justify;
+    padding-left: 20px;
+    padding-right: 20px;
+    
+}
+
+.experience-container {
+    display: flex;
+    width: 100%;
+    height: 500px;
+    flex-direction: row wrap;
+    padding: 0px;
+    margin: 0px;
+}
+
+.experience {
+    margin-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 49%;
+    height: auto;
+    margin-bottom: 0;
+    padding-bottom: 0px;
+    z-index: 2;
+    
+}
+
+.experience p {
+    text-align: justify;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.experience h3 {
+    font-size: 25px;
+}
+
+.experience .logo {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-left: 0;
+    margin-bottom: 5px;
+    
+}
+.experience .logo i {
+    font-size: 100px;
+    color: var(--white);
+}
+
+.about .about-wave {
+    position: absolute;
+    width: 100%;
+    height: auto;
+    margin-top: 735px;
+    z-index: 0;
+}
+
+
+.project {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 70vh;
+    background-color: var(--color3);
+    margin-top: 0;
+}
+
+.project-box {
+    text-align: center;
+    margin-top: 40px;
+    background-color: var(--white);
+    width: 350px;
+    height: 400px;
+    border-radius: 12px;
+    padding: 10px;
+}
+
+.project-box h2 {
+    font-size: 30px;
+    margin-top: 10px;
+}
+
+.project-box hr {
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    border: 1px solid var(--bg-color);
+}
+
+.project-box i {
+    color: var(--color2);
+    font-size: 100px;
+}
+
+.project-box p {
+    text-align: justify;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.project-box input {
+    font-size: 18px;
+    padding: 5px 40px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    background: linear-gradient(to right, var(--color4), var(--color3));
+    color: var(--white);
+    transform: transform 3s ease-in-out;
+
+}
+
+.project-box input:hover{
+    transform: scale(1.2);
+}
+
+.contacts {
+    width: 100%;
+    height: 40vh;
+    background-color: var(--bg-color);
+    color: var(--white);
+    text-align: center;
+    padding-top: 60px;
+}
+.contacts h1 {
+    font-size: 60px;
+    margin-bottom: -10px;
+}
+
+.contacts p {
+    margin-bottom: 30px;
+}
+
+.contacts i {
+    font-size: 40px;
+    padding: 0 10px;
+}
+
+.contacts a {
+    text-decoration: none;
+    color: var(--white);
+}
+
+.contacts a:hover {
+    color: var(--color3);
+} 
+

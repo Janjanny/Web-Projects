@@ -1,0 +1,95 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;500;700&family=Poppins:wght@500&display=swap");
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Inter";
+}
+
+body {
+  background-color: #1F2937;
+  color: white;
+}
+
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 550px;
+  height: 729px;
+  border: 1px solid #5c5c5c;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.container .number-div {
+  width: 100%;
+  height: 285px;
+  background-color: #6943FF;
+  padding: 28px;
+  text-align: center;
+  margin-bottom: 36px;
+}
+.container .number-div h2 {
+  font-size: 28px;
+  margin-bottom: 25px;
+}
+.container .number-div #input-field {
+  border: 2px solid #B295FF;
+  border-radius: 5px;
+  width: 117px;
+  height: 83px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: transparent;
+  font-size: 60px;
+  text-align: center;
+  color: white;
+  font-weight: bold;
+  margin-bottom: 28px;
+}
+.container .number-div #input-field:focus {
+  outline: none;
+}
+.container .number-div button {
+  display: block;
+  width: 117px;
+  height: 42px;
+  background-color: white;
+  border: none;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+  border-radius: 5px;
+  cursor: pointer;
+  margin-left: auto;
+  margin-right: auto;
+  transition: 0.2s;
+}
+.container .number-div button:hover {
+  border: 2px solid white;
+  background-color: transparent;
+  color: white;
+}
+.container .number-div button:active {
+  transform: scale(0.95);
+  background-color: white;
+  color: #1F2937;
+}
+.container .measures {
+  width: 500px;
+  height: 108.57px;
+  background-color: #273549;
+  border-radius: 4px;
+  text-align: center;
+  margin-bottom: 23px;
+}
+.container .measures h3 {
+  color: #CCC1FF;
+  font-size: 20px;
+  margin-top: 31px;
+  margin-bottom: 9px;
+}
+.container .measures p {
+  font-size: 15px;
+  font-weight: 300;
+}/*# sourceMappingURL=styles.css.map */

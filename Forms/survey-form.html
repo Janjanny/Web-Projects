@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="/survey-style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+</head>
+<body>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">Fill up this survey form to register your basic information</p>
+    <form action="" id="survey-form">
+        <fieldset>
+            <label for="name" id="name-label">
+                Enter your name: <input type="text" id="name" placeholder="Juan Dela Cruz" required>
+            </label>
+            <label for="" id="email-label">
+                Enter your email: <input type="email" id="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" placeholder="example@example.com" required>
+            </label>
+            <label for="" id="number-label">
+                Enter your phone number: <input type="number" name="number" id="number" min="09000000000" max="99999999999" pattern="[0-9]{11}" placeholder="09123456789" required>
+            </label>
+        </fieldset>
+        <fieldset>
+            <label for="dropdown">
+                What is your gender: <select name="" id="dropdown">
+                    <option value="">Select one</option>
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                    <option value="Non-Binary">Non-Binary</option>
+                    <option value="Batman">Batman</option>
+
+                </select>
+                <label for="">
+                    What is your Marital status?
+                    <label for="Single">
+                        <input type="radio" id="Single" name="marital-status" class="inline" value="single">Single
+                    </label>
+                    <label for="Married">
+                        <input type="radio" id="Married" name="marital-status" class="inline" value="married">Married
+                    </label>
+                    <label for="Divorced">
+                        <input type="radio" id="Divorced" name="marital-status" class="inline" value="divorced">Divorced
+                    </label>
+                    <label for="Widowed">
+                        <input type="radio" id="Widowed" name="marital-status" class="inline" value="widow">Widowed
+                    </label>
+                </label>
+            </label>
+        </fieldset>
+        <fieldset>
+            <label for="">
+                Which of the following anime protagonist do you like?
+                <label for="Naruto">
+                    <input type="checkbox" name="" id="Naruto" value="naruto" class="inline"> Naruto
+                </label>
+                <label for="Luffy">
+                    <input type="checkbox" name="" id="Luffy" value="luffy" class="inline"> Luffy
+                </label>
+                <label for="Ichigo">
+                    <input type="checkbox" name="" id="Ichigo" value="ichigo" class="inline"> Ichigo
+                </label>
+                <label for="Gon">
+                    <input type="checkbox" name="" id="Gon" value="gon" class="inline"> Gon
+                </label>
+                <label for="Asta">
+                    <input type="checkbox" name="" id="Asta" value="asta" class="inline"> Asta
+                </label>
+                <label for="Midoriya">
+                    <input type="checkbox" name="" id="Midoriya" value="midoriya" class="inline"> Midoriya
+                </label>
+                <label for="Gintama">
+                    <input type="checkbox" name="" id="Gintama" value="gintama" class="inline"> Gintama
+                </label>
+                <label for="Boruto">
+                    <input type="checkbox" name="" id="Boruto" value="boruto" class="inline"> Boruto
+                </label>
+                <label for="Sung">
+                    <input type="checkbox" name="" id="Sung" value="sung jin woo" class="inline"> Sung Jin woo
+                </label>
+                <label for="Ains">
+                    <input type="checkbox" name="" id="Ains" value="ains ooal gown" class="inline"> Ains Ooal Gown
+                </label>
+
+            </label>
+            <label for="">Anything about yourself: </label>
+            <textarea name="" id="" cols="30" rows="5" placeholder="I like pizza with pineapples..."></textarea>
+        </fieldset>
+        <input type="submit" value="Submit" id="submit">
+    </form>
+    
+</body>
+</html>

@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500&display=swap');
+
+*{
+    font-family: 'Fira Code', monospace;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    * {
+        scroll-behavior: smooth;
+    }
+}
+
+body {
+    margin: 0;
+}
+
+#navbar h1 {
+    line-height: 40px;
+    vertical-align: middle;
+}
+
+#main-doc {
+    display: flex;
+    background-color: #222831;
+    color: #EEEEEE;
+    height: 100%;
+}
+
+.navigation {
+    position: sticky;
+    top: 0;
+    width: 25%;
+    height: 100%;
+}
+
+.contents {
+    width: 75%;
+    height: 100%;
+    padding-left: 40px;
+    padding-right: 30px;
+    border-left: 2px solid #EEEEEE;
+    overflow: hidden;
+}
+
+.docs-title {
+    margin: 0;
+    padding-top: 10px;
+    display: block;
+    width: 100%;
+    height: 60px;
+    text-align: center;
+    font-size: 30px;
+}
+
+.links {
+    display: block;
+    height: 100%;
+    border-top: 1px solid #EEEEEE;
+    padding: 6px; 
+    line-height: 35px;
+    margin: 0;
+    
+}
+
+.links:hover, .links a:hover {
+    background-color: #EEEEEE;
+    color: #1A1A2E;
+}
+
+.links a {
+    display: inline-block;
+    vertical-align: middle;
+    width: 100%;
+    color: #EEEEEE;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+
+.links:hover {
+    cursor: pointer;
+}
+
+.main-section {
+    text-align: justify;
+    margin-bottom: 80px;
+}
+
+.main-section header {
+    font-size: 30px;
+    margin-bottom: -10px;
+    color: #FFD369;
+}
+
+.main-section p {
+    padding: 8px;
+
+}
+
+ul li {
+    padding: 15px;
+
+}
+
+code {
+    display: block;
+    margin: 10px auto 10px 30px;
+    
+}
+
+.codes {
+    background-color: #393E46;
+    color: #EDEDED;
+    width: 95%;
+    margin-left: 50px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#Reference a {
+    color: #FFD369;
+}
+
+@media screen and (max-width: 1224px) {
+    #navbar h1 {
+        font-size: 20px;
+    }
+}
+
+@media  screen and (max-width: 900px) {
+    .links a {
+        font-size: 15px;
+    }
+
+    .main-section p {
+        font-size: 15px;
+    }
+
+    ul li {
+        font-size: 15px;
+    }
+
+    .codes {
+        width: 90%;
+    }
+
+    code {
+        font-size: 15px;
+        padding-right: 30px;
+    }
+
+    
+}

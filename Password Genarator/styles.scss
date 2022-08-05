@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap');
+
+$background: #232931;
+$fontColor: #EEEEEE;
+$secondaryColor: #4ECCA3;
+$poppins: 'Poppins', sans-serif;
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: $background;
+    color: $fontColor;
+    font-family: $poppins;
+}
+
+.container {
+    max-width: 80%;
+    height: 70vh;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+
+    h1 {
+        font-size: 4em;
+        line-height: 1em;
+        span {
+            color: $secondaryColor;
+        }
+    }
+
+    h2 {
+        font-weight: lighter    ;
+    }
+
+    .buttons{
+        margin-top: 3em;
+
+        button{
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: .5em .5em;
+            background-color: $secondaryColor;
+            color: $fontColor;
+            border: none;
+            border-radius: .3em;
+            cursor: pointer;
+            margin-bottom: 1.1em;
+        }
+
+
+        button:hover {
+            color: $secondaryColor;
+            background-color: $fontColor;
+            transition: .3s ease;
+            
+        }
+
+        button:active{
+            transform: scale(.95);
+            transition: .1s;
+        }
+
+        p{
+            font-size: 1.5em;
+            font-weight: lighter;
+        }
+        hr {
+            width: 25em;
+            height: 1px;
+            background-color: $fontColor;
+        }
+    }
+
+    .samples {
+        margin-top: 2em;
+        button {
+            font-size: 1.3em;
+            padding: .5em 1em;
+            background-color: #393E46;
+            border: none;
+            color: $secondaryColor;
+            border-radius: .3em;
+            cursor: pointer;
+        }
+        button:hover{
+            color: #393E46;
+            background-color: $secondaryColor;
+            transition: .3s;
+        }
+        button:active {
+            transform: scale(.90);
+        }
+        #firstPass{
+            margin-right: 1em;
+        }
+    }
+
+}
+
+    

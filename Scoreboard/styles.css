@@ -1,0 +1,76 @@
+body {
+  background-color: #0C4A6E;
+}
+
+.container {
+  width: 70%;
+  min-height: 50vh;
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.container .title {
+  width: 100%;
+  font-family: "Verdana";
+  font-size: 40px;
+  color: #F9FAFB;
+  font-style: italic;
+  padding-bottom: 5px;
+}
+.container .title h1 {
+  margin-bottom: 10px;
+}
+.container .scores {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.container .scores .home-score, .container .scores .guest-score {
+  width: 50%;
+}
+.container .scores .home-score h2, .container .scores .guest-score h2 {
+  font-family: "Verdana";
+  font-size: 50px;
+  color: #F9FAFB;
+  margin-bottom: 0;
+}
+.container .scores .home-score .score, .container .scores .guest-score .score {
+  width: 180px;
+  height: 160px;
+  background-color: #111827;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -70px;
+  margin-bottom: 30px;
+}
+.container .scores .home-score .score h1, .container .scores .guest-score .score h1 {
+  line-height: 180px;
+  vertical-align: middle;
+  font-family: "Cursed Timer ULiL";
+  font-size: 120px;
+  color: #F94F6D;
+}
+.container .scores .home-score button, .container .scores .guest-score button {
+  font-family: "Cursed Timer ULiL";
+  color: #BAE6FD;
+  font-size: 25px;
+  border: 2px solid #BAE6FD;
+  border-radius: 5px;
+  background-color: transparent;
+  cursor: pointer;
+  padding: 8px 15px;
+  margin: 5px;
+  text-align: center;
+  transition: 0.2s ease;
+}
+.container .scores .home-score button:hover, .container .scores .guest-score button:hover {
+  background-color: #BAE6FD;
+  color: #0C4A6E;
+}
+.container .scores .home-score button:active, .container .scores .guest-score button:active {
+  transform: scale(0.85);
+}/*# sourceMappingURL=styles.css.map */
